@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pwd.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1507455_do5kx52hggl.css">
+</head>
+<body>
+    <input type="button" value="添加密码框" id="add">
+    <input type="button" value="获得密码" id="get">
+    <div id='main'></div>
+    <script text="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js "></script>
+    <script text="text/javascript" src="./pwd.js"></script>
+    <script>
+        $(function(){
+            $('#add').click(function(){
+                $inp.add('#main');
+            })
+            $('#get').click(function(){
+                $inp.show();
+            })
+        })
+        
+    </script>
+</body>
+</html>
