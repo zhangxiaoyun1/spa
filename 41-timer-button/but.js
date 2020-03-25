@@ -1,17 +1,18 @@
 var $timerButton=(function(){
-    var $btn=$('<input type="button" disabled>'),
-    cft={
-        container:'body'
-    },
-    num=cft.num,
-    timer;
-    $btn.css({
-        width:'150px',
-        height:'50px',
-        marginTop:'20px',
-        textarea:'center'
-    })
+    
     function adds(conf){
+        var $btn=$('<input type="button" disabled>'),
+        cft={
+            container:'body'
+        },
+        timer;
+        $btn.css({
+            width:'150px',
+            height:'50px',
+            marginTop:'20px',
+            textarea:'center',
+            marginRight:'10px'
+        })
         clearInterval(timer);
         $(cft.container).append($btn);
         $.extend(cft,conf);

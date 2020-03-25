@@ -1,6 +1,6 @@
-var $inp=(function(){
+function Inp(){
     var $input=$('<input type="password">');
-    var $shows=$('<i class="iconfont icon-yanjing1"></i>');
+    var $shows=$('<i class="iconfont icon-yanjing1"></i><br>');
     $input.css({
         width:'250px',
         height:'25px',
@@ -20,16 +20,16 @@ var $inp=(function(){
         $input.attr('type','password');
         $shows.attr('class','iconfont icon-yanjing1');
     })
-    function add(con){
+    this.add=function(con){
         $(con).append($input);
         $(con).append($shows);
     }
-    function show(){
+    this.show=function(){
         var pwd=$input.val();
         alert(pwd);
     }
-    return{
-        add:add,
-        show:show
-    }
-}())
+    // return{
+    //     add:add,
+    //     show:show
+    // }
+}

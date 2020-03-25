@@ -16,11 +16,12 @@
     <script>
         $(function(){
             $('#add').click(function(){
-                $inp.add('#main');
-            })
-            $('#get').click(function(){
-                $inp.show();
-            })
+                var inp=new Inp();
+                inp.add('#main');
+                $('#get').click(function(){
+                inp.show();
+                })
+            }) 
         })
         
     </script>
