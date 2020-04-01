@@ -1,0 +1,15 @@
+input{
+    width:250px;
+    height:25px;
+    margin-top:100px
+}
+#shows{
+     margin-left:-30px;
+     margin-top:10px;
+     color:'#ccc';
+     font-size:24
+}
+#main{
+    width: 100%;
+    text-align: center;
+}
